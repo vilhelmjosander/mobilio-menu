@@ -11,36 +11,47 @@ Transforms your menu to an off-canvas mobile menu with 2 lines of javascript, no
     
 ##Options
 
-##### breakpoint(Int)
+###### breakpoint(Int)
 At what width should we initialize/reset the mobilio menu. Null for always.
 
 Defaults: null
 
-##### direction(String)
+<hr>
+
+###### direction(String)
 Should the menu slide in from left or right
 
 Defaults: 'left' 
 
-##### theme(String)
+<hr>
+
+###### theme(String)
 Light/Dark theme
 
 Defaults: 'dark'
 
-##### hideOriginal(Boolean)
+<hr>
+
+###### hideOriginal(Boolean)
 Whether you should hide the original menu when initializing
 
 Defaults: true 
 
-##### allowedTags(Array)
+<hr>
+
+###### allowedTags(Array)
 An array containing nodenames of allowed elements. If the original menu contains an element which is not allowed, it will be removed along with all of it's children.
 
 Defaults: ['DIV', 'UL', 'OL', 'LI', 'A', 'SPAN']
 
-##### childMenuClass(String)
+<hr>
+
+###### childMenuClass(String)
 Classname of the childmenus. Needed for hierarchical menus with toggle-functionality.
 
 Defaults: '.child-menu'
 
+<hr>
 
 ##Caveats
 
