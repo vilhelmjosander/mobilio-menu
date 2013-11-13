@@ -81,6 +81,10 @@ var mobilioMenu = (function() {
 
     function setClasses() {
         helpers.DOM.addClass(body, 'off-canvas');
+        helpers.DOM.addClass(header, 'off-canvas-header');
+        helpers.DOM.addClass(button, 'off-canvas-toggle');
+        helpers.DOM.addClass(holder, 'off-canvas-holder');
+
         if( options.direction === 'right' ) {
             helpers.DOM.addClass(body, 'direction-right');
         }
@@ -90,21 +94,16 @@ var mobilioMenu = (function() {
     }
 
     function createHeader() {
-        helpers.DOM.addClass(header, 'off-canvas-header');
         helpers.DOM.prependChild(body, header);
-
         addToggleButton();
     };
 
     function addToggleButton() {
-        helpers.DOM.addClass(button, 'off-canvas-toggle');
         header.appendChild(button);
     };
 
     function createHolder() {
-        helpers.DOM.addClass(holder, 'off-canvas-holder');
         helpers.DOM.prependChild(body, holder);
-
         cloneMenu();
     };
 
