@@ -8,7 +8,7 @@ var mobilioMenu = (function() {
         childMenuClass:     '.child-menu',
         direction:          'left',
         theme:              'dark',
-        allowedTags:        ['DIV', 'UL', 'LI', 'A', 'SPAN'],
+        allowedTags:        ['DIV', 'UL', 'OL', 'LI', 'A', 'SPAN'],
         hideOriginal:       true,
         breakpoint:         null
     };
