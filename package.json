@@ -1,0 +1,13 @@
+{
+  "name": "MobilioMenu",
+  "repository": "git@github.com:vilhelmjosander/mobilio-menu.git",
+  "description": "Transform your menu to an off-canvas mobile menu",
+  "author": "Vilhelm Josander",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-sass": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
