@@ -1,0 +1,36 @@
+<html style="width:100%">
+<head>
+    <link rel="stylesheet" href="src/styles/mobilio-menu.css">
+    <script type="text/javascript" src="src/js/mobilio-menu.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body style="width:100%">
+    <ul id="myList">
+        <li><a href="#">Top Level</a>
+            <ul class="child-menu">
+                <li class="HEJ" id="hej2"><a href="#">Sub Level 1</a></li>
+                <li><a href="#">Sub Level 1</a></li>
+                <li><a href="#">Sub Level 1</a>
+                    <ul class="child-menu">
+                        <li><a href="#">Sub Level 2</a></li>
+                        <li><a href="#">Sub Level 2</a></li>
+                        <li><a href="#">Sub Level 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Top Level</a></li>
+        <li><a href="#">Top Level</a></li>
+        <li><a href="#">Top Level</a></li>
+        <li><a href="#">Top Level</a></li>
+        <li><a href="#">Top Level</a></li>
+        <li><a href="#">Top Level</a></li>
+        <li><a href="#">Top Level</a></li>
+    </ul>
+
+    <script>
+        var elem = document.getElementById('myList');
+        offCanvas.init(elem, {direction: 'left', theme: 'left', breakpoint: 770});
+    </script>
+</body>
+</html>

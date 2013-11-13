@@ -1,0 +1,24 @@
+body.light-theme {
+
+    .off-canvas-header {
+        background:#FAFAFA;
+
+        * {
+            border-color:#303335 !important;
+        }
+    }
+    .off-canvas-holder {
+        background:#FAFAFA;
+
+        * {
+            border-color:#E8E7E7 !important;
+
+            &:after, &:before {
+                color:#303335;
+            }
+        }
+        li, a {
+            color:#303335;
+        }
+    }
+}

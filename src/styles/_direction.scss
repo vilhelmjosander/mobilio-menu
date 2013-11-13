@@ -1,0 +1,23 @@
+body.direction-right {
+    .off-canvas-holder {
+        right:0px !important;
+        left:auto;
+        @include translateX(270px);
+    }
+
+    .off-canvas-toggle {
+        right:10px;
+        left:auto;
+    }
+
+    &.off-canvas-in {
+        .off-canvas-holder {
+            right:0px;
+            @include translateX(0px);
+        }
+
+        .off-canvas-header {
+            @include translateX(-270px);
+        }
+    }
+}
