@@ -1,4 +1,4 @@
-var offCanvas = (function() {
+var mobilioMenu = (function() {
     "use strict";
 
     var isInit, options, holder, header, shader, triggerButton, clonedMenu, origElem, body, button;
@@ -44,6 +44,7 @@ var offCanvas = (function() {
 
     function initAll() {
         setElems();
+        setClasses();
 
         createHolder();
         createHeader();
@@ -72,7 +73,13 @@ var offCanvas = (function() {
     };
 
     function setElems() {
-        body = document.querySelectorAll('body')[0];
+        body = document.querySelector('BODY');
+        header = document.createElement('HEADER');
+        holder = document.createElement('SECTION');
+        button = document.createElement('DIV');
+    };
+
+    function setClasses() {
         helpers.DOM.addClass(body, 'off-canvas');
         if( options.direction === 'right' ) {
             helpers.DOM.addClass(body, 'direction-right');
@@ -80,25 +87,22 @@ var offCanvas = (function() {
         if(options.theme === 'light') {
             helpers.DOM.addClass(body, 'light-theme');
         }
-    };
+    }
 
     function createHeader() {
-        header = document.createElement('HEADER')
-        header.className = 'off-canvas-header';
+        helpers.DOM.addClass(header, 'off-canvas-header');
         helpers.DOM.prependChild(body, header);
 
         addToggleButton();
     };
 
     function addToggleButton() {
-        button = document.createElement('DIV');
         helpers.DOM.addClass(button, 'off-canvas-toggle');
         header.appendChild(button);
     };
 
     function createHolder() {
-        holder = document.createElement('SECTION');
-        holder.className = 'off-canvas-holder';
+        helpers.DOM.addClass(holder, 'off-canvas-holder');
         helpers.DOM.prependChild(body, holder);
 
         cloneMenu();
