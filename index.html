@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body style="width:100%">
-    <ul id="myList">
-        <li><a href="#">Top Level</a>
-            <ul class="child-menu">
-                <li class="HEJ" id="hej2"><a href="#">Sub Level 1</a></li>
-                <li><a href="#">Sub Level 1</a></li>
-                <li><a href="#">Sub Level 1</a>
-                    <ul class="child-menu">
-                        <li><a href="#">Sub Level 2</a></li>
-                        <li><a href="#">Sub Level 2</a></li>
-                        <li><a href="#">Sub Level 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li><a href="#">Top Level</a></li>
-        <li><a href="#">Top Level</a></li>
-        <li><a href="#">Top Level</a></li>
-        <li><a href="#">Top Level</a></li>
-        <li><a href="#">Top Level</a></li>
-        <li><a href="#">Top Level</a></li>
-        <li><a href="#">Top Level</a></li>
-    </ul>
+
+    <div id="myList">
+        <ul>
+            <li><a href="#">Top Level</a>
+                <ul class="child-menu">
+                    <li class="HEJ" id="hej2"><a href="#">Sub Level 1</a></li>
+                    <li><a href="#">Sub Level 1</a></li>
+                    <li><a href="#">Sub Level 1</a>
+                        <ul class="child-menu">
+                            <li><a href="#">Sub Level 2</a></li>
+                            <li><a href="#">Sub Level 2</a></li>
+                            <li><a href="#">Sub Level 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+        </ul>
+    </div>
 
     <script>
-        var elem = document.getElementById('myList');
+        var elem = document.querySelector('#myList');
         mobilioMenu.init(elem, {direction: 'left', theme: 'left', breakpoint: 770});
     </script>
 </body>
