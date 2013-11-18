@@ -23,7 +23,7 @@ var mobilioMenu = (function() {
     function init(elem, opts) {
 
         if(!helpers.utils.browserHasTransformSupport) {
-            throw "Your browser not supported by offCanvas";
+            throw "Your browser not supported by Mobilio Menu";
             return;
         }
 
