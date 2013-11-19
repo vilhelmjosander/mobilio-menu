@@ -25,9 +25,13 @@ var mobilioMenu = (function() {
         if(!helpers.utils.browserHasTransformSupport) {
             throw "Your browser not supported by Mobilio Menu";
             return;
+        } else if(!elem) {
+            throw "You must provide an element to turn into a mobile menu";
+            return;
         }
 
         origElem = elem;
+        opts = opts || {};
         options = helpers.utils.extendObj(defaults, opts);
 
         window.addEventListener('DOMContentLoaded', function() {

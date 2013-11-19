@@ -88,14 +88,14 @@ body.off-canvas-in .off-canvas-holder {
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
-  .off-canvas-holder ul {
+  .off-canvas-holder ul, .off-canvas-holder ol {
     list-style: none;
     padding-left: 0px;
     border-top: 1px solid #333333;
     margin-left: 0px;
     padding-left: 0px;
     width: 100%; }
-    .off-canvas-holder ul li {
+    .off-canvas-holder ul li, .off-canvas-holder ol li {
       width: 270px;
       padding: 10px 20px;
       border-bottom: 1px solid #333333;
