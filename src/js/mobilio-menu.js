@@ -20,7 +20,7 @@ var mobilioMenu = (function() {
         fastClick: isTouch ? 'touchend' : 'click'
     };
 
-    function init(elem, opts) {
+    function create(elem, opts) {
 
         if(!helpers.utils.browserHasTransformSupport) {
             throw "Your browser not supported by Mobilio Menu";
@@ -44,7 +44,7 @@ var mobilioMenu = (function() {
             }
         });
 
-    };
+    }
 
     function initAll() {
         setElems();
@@ -56,7 +56,7 @@ var mobilioMenu = (function() {
         addEvents();
 
         isInit = true;
-    };
+    }
 
     function resetAll() {
         if( options.hideOriginal ) {
@@ -66,7 +66,7 @@ var mobilioMenu = (function() {
         helpers.DOM.removeClass(body, 'off-canvas');
 
         isInit = false;
-    };
+    }
 
     function resizeHandler() {
         if(window.innerWidth <= options.breakpoint && !isInit) {
@@ -74,14 +74,14 @@ var mobilioMenu = (function() {
         } else if( window.innerWidth > options.breakpoint && isInit ) {
             resetAll();
         }
-    };
+    }
 
     function setElems() {
         body = document.querySelector('BODY');
         header = document.createElement('HEADER');
         holder = document.createElement('SECTION');
         button = document.createElement('DIV');
-    };
+    }
 
     function setClasses() {
         helpers.DOM.addClass(body, 'off-canvas');
@@ -255,10 +255,10 @@ var mobilioMenu = (function() {
     // PUBLIC
     return {
         version: 0.1,
-        init: init,
+        create: create,
         toggle: function() {
             helpers.DOM.toggleClass(body, 'off-canvas-in');
         }
-    }
+    };
 
 })();
