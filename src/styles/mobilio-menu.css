@@ -39,12 +39,12 @@ body.off-canvas-in .off-canvas-holder {
   top: 0px;
   z-index: 100; }
   .off-canvas-header .off-canvas-toggle {
-    width: 22px;
+    width: 8px;
     height: 4px;
     left: 0px;
     position: absolute;
-    margin: 13px;
-    border-bottom: 3px solid #fff;
+    margin: 12px;
+    padding: 13px;
     border-top: 10px double #fff;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -57,6 +57,14 @@ body.off-canvas-in .off-canvas-holder {
     -o-transform: translateX(0px);
     transform: translateX(0px);
     cursor: pointer; }
+    .off-canvas-header .off-canvas-toggle:before {
+      content: '';
+      width: 34px;
+      height: 3px;
+      background: #fff;
+      top: 4px;
+      left: 0px;
+      position: absolute; }
 
 /** HOLDER **/
 .off-canvas-holder {

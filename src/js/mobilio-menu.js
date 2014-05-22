@@ -10,7 +10,9 @@ var mobilioMenu = (function() {
         theme:              'dark',
         allowedTags:        ['DIV', 'UL', 'OL', 'LI', 'A', 'SPAN'],
         hideOriginal:       true,
-        breakpoint:         null
+        breakpoint:         null,
+        stripClasses:       true,
+        stripAttrs:         true
     };
 
     var isTouch = !!('ontouchstart' in document.documentElement) || !!('onmsgesturestart' in document.documentElement);
@@ -32,6 +34,7 @@ var mobilioMenu = (function() {
 
         origElem = elem;
         opts = opts || {};
+        opts.allowedTags = defaults.allowedTags.concat(opts.allowedTags);
         options = helpers.utils.extendObj(defaults, opts);
 
         window.addEventListener('DOMContentLoaded', function() {
@@ -157,8 +160,13 @@ var mobilioMenu = (function() {
                     resetChildMenuClass = true;
                 }
 
-                items[i].removeAttribute('class');
-                items[i].removeAttribute('id');
+                if(options.stripClasses) {
+                    items[i].removeAttribute('class');
+                }
+                
+                if(options.stripClasses) {
+                    items[i].removeAttribute('id');
+                }
 
                 if(resetChildMenuClass) {
                     helpers.DOM.addClass(items[i], childClass);
