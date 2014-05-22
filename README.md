@@ -40,7 +40,7 @@ Defaults: true
 <hr>
 
 ###### allowedTags(Array)
-An array containing nodenames of allowed elements. If the original menu contains an element which is not allowed, it will be removed along with all of it's children.
+An array containing nodenames of allowed elements. If the original menu contains an element which is not allowed, it will be removed along with all of it's children. Merges the user-specified array with the defaults.
 
 Defaults: ['DIV', 'UL', 'OL', 'LI', 'A', 'SPAN']
 
@@ -50,6 +50,20 @@ Defaults: ['DIV', 'UL', 'OL', 'LI', 'A', 'SPAN']
 Classname of the childmenus. Needed for hierarchical menus with toggle-functionality.
 
 Defaults: '.child-menu'
+
+<hr>
+
+###### stripClasses(Boolean)
+Whether you want to strip the original classes of the elements in the menu. By default all classes will be stripped so that there is no interfering css.
+
+Defaults: true
+
+<hr>
+
+###### stripIDs(Boolean)
+Whether you want to strip the original attributes IDs of the elements in the menu. By default all IDs will be stripped so that there is no interfering css.
+
+Defaults: true
 
 <hr>
 
