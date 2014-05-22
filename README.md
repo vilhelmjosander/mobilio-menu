@@ -6,9 +6,9 @@ Transforms your menu to an off-canvas mobile menu with 2 lines of javascript, no
 ##Example:
 
 	var elem = document.querySelector('#myList');
-    mobilioMenu.init(elem, { breakpoint:768 });
-    
-    
+    mobilioMenu.create(elem, { breakpoint:768 });
+
+
 ##Options
 
 ###### breakpoint(Int)
@@ -21,7 +21,7 @@ Defaults: null
 ###### direction(String)
 Should the menu slide in from left or right
 
-Defaults: 'left' 
+Defaults: 'left'
 
 <hr>
 
@@ -35,7 +35,7 @@ Defaults: 'dark'
 ###### hideOriginal(Boolean)
 Whether you should hide the original menu when initializing
 
-Defaults: true 
+Defaults: true
 
 <hr>
 
