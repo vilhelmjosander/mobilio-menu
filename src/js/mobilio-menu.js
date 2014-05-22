@@ -12,7 +12,7 @@ var mobilioMenu = (function() {
         hideOriginal:       true,
         breakpoint:         null,
         stripClasses:       true,
-        stripAttrs:         true
+        stripIDs:           true
     };
 
     var isTouch = !!('ontouchstart' in document.documentElement) || !!('onmsgesturestart' in document.documentElement);
@@ -163,8 +163,8 @@ var mobilioMenu = (function() {
                 if(options.stripClasses) {
                     items[i].removeAttribute('class');
                 }
-                
-                if(options.stripClasses) {
+
+                if(options.stripIDs) {
                     items[i].removeAttribute('id');
                 }
 
