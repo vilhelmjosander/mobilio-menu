@@ -35,12 +35,22 @@ body.off-canvas-in {
     z-index:100;
 
     .off-canvas-toggle {
-        width:22px;
+        width:8px;
         height:4px;
         left:0px;
         position:absolute;
-        margin:13px;
-        border-bottom:3px solid #fff;
+        margin:12px;
+        padding:13px;
+        &:before {
+            content:'';
+            width:34px;
+            height:3px;
+            background:#fff;
+            top:4px;
+            left:0px;
+            position:absolute;
+        }
+        //border-bottom:3px solid #fff;
         border-top:10px double #fff;
         @include transition(0.4s);
         @include translateX(0px);
