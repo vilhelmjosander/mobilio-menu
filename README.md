@@ -9,6 +9,8 @@ Transforms your menu to an off-canvas mobile menu with 2 lines of javascript, no
     mobilioMenu.create(elem, { breakpoint:768 });
 
 
+This library expects your menu to be an UL-list.
+
 ##Options
 
 ###### breakpoint(Int)
@@ -64,6 +66,12 @@ Defaults: true
 Whether you want to strip the original attributes IDs of the elements in the menu. By default all IDs will be stripped so that there is no interfering css.
 
 Defaults: true
+
+<hr>
+
+##Build
+
+Install grunt using npm then just runt 'grunt' in the project directory.
 
 <hr>
 
