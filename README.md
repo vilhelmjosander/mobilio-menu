@@ -17,8 +17,7 @@ Create menu:
         mobilioMenu.create(elem, { breakpoint:768 });
     </script>
 
-
-This library expects your menu to be an UL-list.
+Look at the example index.html for and example of how to use mobilio-menu. This library expects your menu to be an UL-list.
 
 ##Options
 
