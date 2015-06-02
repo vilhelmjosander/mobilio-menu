@@ -5,8 +5,17 @@ Transforms your menu to an off-canvas mobile menu with 2 lines of javascript, no
 
 ##Example:
 
-	var elem = document.querySelector('#myList');
-    mobilioMenu.create(elem, { breakpoint:768 });
+Include scripts and styles:
+
+    <script src="path/to/mobilio-menu.js" type="text/javascript"></script>
+    <link href="path/to/mobilio-menu.css" rel="stylesheet" />
+
+Create menu:
+
+    <script>
+    	var elem = document.querySelector('#myList');
+        mobilioMenu.create(elem, { breakpoint:768 });
+    </script>
 
 
 This library expects your menu to be an UL-list.
